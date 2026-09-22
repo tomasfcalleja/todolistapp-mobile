@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Todo List App</string>
+    <string name="login_titulo">Bienvenido</string>
+    <string name="login_subtitulo">Organizá tus tareas</string>
+    <string name="login_email">tu@email.com</string>
+    <string name="login_password">Contraseña</string>
+    <string name="login_entrar">Entrar</string>
+    <string name="login_sin_cuenta">¿No tenés cuenta?</string>
+    <string name="login_registrate">Registrate</string>
+    <string name="error_campos_vacios">Completá todos los campos</string>
+    <string name="error_credenciales">Email o contraseña incorrectos</string>
+    <string name="registro_titulo">Crear cuenta</string>
+    <string name="registro_subtitulo">Empezá a organizar tus tareas</string>
+    <string name="registro_nombre">Nombre</string>
+    <string name="registro_boton">Crear cuenta</string>
+    <string name="registro_con_cuenta">¿Ya tenés cuenta?</string>
+    <string name="registro_entra">Entrá</string>
+    <string name="error_email_registrado">Ese email ya está registrado</string>
+    <string name="home_titulo">Mis tareas</string>
+    <string name="home_filtrar">Filtrar por categoría</string>
+    <string name="home_gestionar">Gestionar</string>
+    <string name="home_nueva">Nueva tarea</string>
+    <string name="home_vacio">Todavía no tenés tareas</string>
+    <string name="home_vacio_sub">Tocá el + para crear la primera</string>
+    <string name="chip_todas">Todas</string>
+    <string name="sin_categoria">Sin categoría</string>
+    <string name="home_saludo">Hola, %1$s</string>
+    <string name="tarea_titulo_nueva">Nueva tarea</string>
+    <string name="tarea_titulo_editar">Editar tarea</string>
+    <string name="tarea_hint_titulo">¿Qué tenés que hacer?</string>
+    <string name="tarea_hint_descripcion">Notas (opcional)</string>
+    <string name="tarea_categoria">Categoría</string>
+    <string name="tarea_guardar">Guardar</string>
+    <string name="tarea_eliminar">Eliminar tarea</string>
+    <string name="tarea_eliminar_titulo">¿Eliminar la tarea?</string>
+    <string name="tarea_eliminar_mensaje">Esta acción no se puede deshacer.</string>
+    <string name="error_titulo_vacio">Escribí un título</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="volver">Volver</string>
+    <string name="categorias_titulo">Categorías</string>
+    <string name="categorias_hint">Nueva categoría</string>
+    <string name="categorias_agregar">Agregar</string>
+    <string name="categorias_vacio">Todavía no tenés categorías</string>
+    <string name="categoria_eliminar">Eliminar categoría</string>
+    <string name="categoria_eliminar_titulo">¿Eliminar %1$s?</string>
+    <string name="categoria_eliminar_mensaje">Esta acción no se puede deshacer.</string>
+    <string name="categoria_eliminar_con_tareas">Hay %1$d tareas pendientes en esta categoría. Van a quedar sin categoría.</string>
+    <string name="error_nombre_vacio">Escribí un nombre</string>
+    <string name="error_categoria_repetida">Ya tenés una categoría con ese nombre</string>
+
+    <plurals name="categoria_pendientes">
+        <item quantity="one">%d pendiente</item>
+        <item quantity="other">%d pendientes</item>
+    </plurals>
+</resources>

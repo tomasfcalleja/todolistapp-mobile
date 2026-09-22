@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base de la que heredan todos. La notacion con punto la resuelve sola. -->
+    <style name="Texto" />
+
+    <style name="Texto.Display">
+        <item name="android:fontFamily">@font/space_grotesk_medium</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:lineSpacingMultiplier">1.15</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Texto.Title">
+        <item name="android:fontFamily">@font/space_grotesk_medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Texto.Body">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+
+    <style name="Texto.Label">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/muted</item>
+    </style>
+
+    <style name="Texto.Kicker">
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/muted</item>
+        <item name="android:letterSpacing">0.09</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/alto_input</item>
+        <item name="android:background">@drawable/bg_input</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textColorHint">@color/muted</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="Boton.Primario" parent="Widget.Material3.Button">
+        <item name="android:layout_height">@dimen/alto_boton</item>
+        <item name="backgroundTint">@color/ink</item>
+        <item name="android:textColor">@color/on_ink</item>
+        <item name="cornerRadius">@dimen/radio_pildora</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="Texto.Error">
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/error</item>
+    </style>
+
+    <style name="Forma.Fab" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="Input.Multilinea" parent="Input">
+        <item name="android:layout_height">110dp</item>
+        <item name="android:gravity">top|start</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:maxLines">6</item>
+        <item name="android:inputType">textMultiLine|textCapSentences</item>
+    </style>
+
+    <style name="Boton.Secundario" parent="Boton.Primario">
+        <item name="backgroundTint">@color/surface</item>
+        <item name="android:textColor">@color/ink</item>
+    </style>
+
+</resources>

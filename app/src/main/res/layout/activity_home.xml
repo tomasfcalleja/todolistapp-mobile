@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="24dp">
+
+        <TextView
+            android:id="@+id/tvSaludo"
+            style="@style/Texto.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margen_lateral"
+            android:layout_marginEnd="@dimen/margen_lateral" />
+
+        <TextView
+            style="@style/Texto.Display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margen_lateral"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="@dimen/margen_lateral"
+            android:text="@string/home_titulo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margen_lateral"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/margen_lateral"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Texto.Kicker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/home_filtrar" />
+
+            <TextView
+                android:id="@+id/tvGestionar"
+                style="@style/Texto.Body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="@string/home_gestionar"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvChips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/margen_lateral"
+            android:paddingEnd="@dimen/margen_lateral"
+            android:layoutAnimation="@anim/layout_entrada_lista"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTareas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingStart="@dimen/margen_lateral"
+                android:paddingTop="16dp"
+                android:paddingEnd="@dimen/margen_lateral"
+                android:paddingBottom="88dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <LinearLayout
+                android:id="@+id/contenedorVacio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/margen_lateral"
+                android:paddingEnd="@dimen/margen_lateral"
+                tools:visibility="visible">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_ilustracion_vacio" />
+
+                <TextView
+                    style="@style/Texto.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/home_vacio" />
+
+                <TextView
+                    style="@style/Texto.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/home_vacio_sub" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNueva"
+        android:layout_width="@dimen/tam_fab"
+        android:layout_height="@dimen/tam_fab"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/margen_lateral"
+        android:contentDescription="@string/home_nueva"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/ink"
+        app:elevation="0dp"
+        app:maxImageSize="24dp"
+        app:tint="@color/on_ink"
+        app:shapeAppearanceOverlay="@style/Forma.Fab"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

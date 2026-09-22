@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/pressed" />
+            <corners android:radius="@dimen/radio_tarjeta" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/surface" />
+            <corners android:radius="@dimen/radio_tarjeta" />
+        </shape>
+    </item>
+</selector>

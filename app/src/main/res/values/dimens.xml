@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Espaciado: siempre multiplos de 4 -->
+    <dimen name="margen_lateral">18dp</dimen>
+    <dimen name="padding_tarjeta">15dp</dimen>
+    <dimen name="gap_tarjetas">10dp</dimen>
+    <dimen name="gap_secciones">24dp</dimen>
+
+    <!-- Radios -->
+    <dimen name="radio_tarjeta">20dp</dimen>
+    <dimen name="radio_input">14dp</dimen>
+    <dimen name="radio_etiqueta">6dp</dimen>
+    <dimen name="radio_pildora">999dp</dimen>
+
+    <!-- Alturas fijas -->
+    <dimen name="alto_chip">32dp</dimen>
+    <dimen name="alto_boton">48dp</dimen>
+    <dimen name="alto_input">52dp</dimen>
+    <dimen name="tam_checkbox">23dp</dimen>
+    <dimen name="tam_fab">56dp</dimen>
+</resources>

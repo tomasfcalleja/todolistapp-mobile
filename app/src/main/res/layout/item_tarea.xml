@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contenedor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_tarjeta"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_tarjeta"
+    android:clipChildren="false">
+
+    <FrameLayout
+        android:layout_width="@dimen/tam_checkbox"
+        android:layout_height="@dimen/tam_checkbox"
+        android:clipChildren="false">
+
+        <View
+            android:id="@+id/vDestello"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/destello"
+            android:alpha="0" />
+
+        <FrameLayout
+            android:id="@+id/contenedorCheck"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/vCheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_checkbox" />
+
+            <ImageView
+                android:id="@+id/ivCheck"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_check"
+                android:visibility="gone" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCategoria"
+            style="@style/Texto.Kicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_etiqueta"
+            android:paddingStart="7dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="7dp"
+            android:paddingBottom="3dp" />
+
+        <com.example.todolistapp.ui.TachadoTextView
+            android:id="@+id/tvTitulo"
+            style="@style/Texto.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" />
+    </LinearLayout>
+
+</LinearLayout>

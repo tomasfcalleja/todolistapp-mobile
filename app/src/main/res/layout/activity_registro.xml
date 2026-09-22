@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:minHeight="800dp"
+        android:paddingStart="@dimen/margen_lateral"
+        android:paddingEnd="@dimen/margen_lateral"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp">
+
+        <TextView
+            style="@style/Texto.Display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registro_titulo" />
+
+        <TextView
+            style="@style/Texto.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/registro_subtitulo" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            style="@style/Input"
+            android:layout_marginTop="32dp"
+            android:hint="@string/registro_nombre"
+            android:inputType="textPersonName"
+            android:autofillHints="name" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            style="@style/Input"
+            android:layout_marginTop="12dp"
+            android:hint="@string/login_email"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress" />
+
+        <TextView
+            android:id="@+id/tvErrorEmail"
+            style="@style/Texto.Error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/error_email_registrado"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/Input"
+            android:layout_marginTop="12dp"
+            android:hint="@string/login_password"
+            android:inputType="textPassword"
+            android:autofillHints="newPassword" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCrear"
+            style="@style/Boton.Primario"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="@string/registro_boton" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Texto.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registro_con_cuenta" />
+
+            <TextView
+                android:id="@+id/tvEntra"
+                style="@style/Texto.Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:padding="6dp"
+                android:text="@string/registro_entra"
+                android:textColor="@color/ink" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

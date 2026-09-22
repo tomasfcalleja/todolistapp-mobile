@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:id="@+id/tvCancelar"
+            style="@style/Texto.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:padding="6dp"
+            android:text="@string/cancelar" />
+
+        <TextView
+            android:id="@+id/tvTituloPantalla"
+            style="@style/Texto.Display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margen_lateral"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="@dimen/margen_lateral" />
+
+        <EditText
+            android:id="@+id/etTitulo"
+            style="@style/Input"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/margen_lateral"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="@dimen/margen_lateral"
+            android:hint="@string/tarea_hint_titulo"
+            android:inputType="textCapSentences" />
+
+        <EditText
+            android:id="@+id/etDescripcion"
+            style="@style/Input.Multilinea"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/margen_lateral"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="@dimen/margen_lateral"
+            android:hint="@string/tarea_hint_descripcion" />
+
+        <TextView
+            style="@style/Texto.Kicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margen_lateral"
+            android:layout_marginTop="@dimen/gap_secciones"
+            android:text="@string/tarea_categoria" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvChipsCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/margen_lateral"
+            android:paddingEnd="@dimen/margen_lateral" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGuardar"
+            style="@style/Boton.Primario"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/margen_lateral"
+            android:layout_marginTop="@dimen/gap_secciones"
+            android:layout_marginEnd="@dimen/margen_lateral"
+            android:text="@string/tarea_guardar" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEliminar"
+            style="@style/Boton.Secundario"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/margen_lateral"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/margen_lateral"
+            android:text="@string/tarea_eliminar"
+            android:textColor="@color/error"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

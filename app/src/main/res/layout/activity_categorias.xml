@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="24dp">
+
+    <TextView
+        android:id="@+id/tvVolver"
+        style="@style/Texto.Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:padding="6dp"
+        android:text="@string/volver" />
+
+    <TextView
+        style="@style/Texto.Display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margen_lateral"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="@dimen/margen_lateral"
+        android:text="@string/categorias_titulo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margen_lateral"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/margen_lateral"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etNueva"
+            style="@style/Input"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="@string/categorias_hint"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAgregar"
+            style="@style/Boton.Primario"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="8dp"
+            android:minWidth="0dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="@string/categorias_agregar" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCategorias"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/margen_lateral"
+            android:paddingTop="20dp"
+            android:paddingEnd="@dimen/margen_lateral"
+            android:paddingBottom="24dp" />
+
+        <TextView
+            android:id="@+id/tvVacio"
+            style="@style/Texto.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/categorias_vacio"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>

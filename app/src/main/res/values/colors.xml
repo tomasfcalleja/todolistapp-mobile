@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base -->
+    <color name="bg">#F4F4F2</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="pressed">#EFEFEC</color>
+    <color name="line">#E7E7E4</color>
+    <color name="muted">#8C8C86</color>
+    <color name="ink">#141414</color>
+    <color name="on_ink">#FFFFFF</color>
+
+    <!-- Etiquetas de categoria: unico lugar con color en toda la app -->
+    <color name="tag_bg_0">#DDF0DC</color>  <color name="tag_text_0">#2C6134</color>
+    <color name="tag_bg_1">#DAE6F6</color>  <color name="tag_text_1">#274E86</color>
+    <color name="tag_bg_2">#E6DEF3</color>  <color name="tag_text_2">#4E377E</color>
+    <color name="tag_bg_3">#F8DDE5</color>  <color name="tag_text_3">#86304E</color>
+    <color name="tag_bg_4">#FBEAC9</color>  <color name="tag_text_4">#7C5011</color>
+    <color name="tag_bg_5">#E8E8E5</color>  <color name="tag_text_5">#55554F</color>
+    <color name="error">#B3261E</color>
+    <array name="tag_bg">
+        <item>@color/tag_bg_0</item>
+        <item>@color/tag_bg_1</item>
+        <item>@color/tag_bg_2</item>
+        <item>@color/tag_bg_3</item>
+        <item>@color/tag_bg_4</item>
+        <item>@color/tag_bg_5</item>
+    </array>
+
+    <array name="tag_text">
+        <item>@color/tag_text_0</item>
+        <item>@color/tag_text_1</item>
+        <item>@color/tag_text_2</item>
+        <item>@color/tag_text_3</item>
+        <item>@color/tag_text_4</item>
+        <item>@color/tag_text_5</item>
+    </array>
+</resources>
