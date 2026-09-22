@@ -62,6 +62,8 @@ public class HomeActivity extends AppCompatActivity
         tareaAdapter = new TareaAdapter(this, this);
         rvTareas.setLayoutManager(new LinearLayoutManager(this));
         rvTareas.setAdapter(tareaAdapter);
+        rvTareas.addItemDecoration(new EspacioVertical(          // <-- nueva
+                getResources().getDimensionPixelSize(R.dimen.gap_tarjetas)));
 
         chipAdapter = new ChipAdapter(this, this);
         RecyclerView rvChips = findViewById(R.id.rvChips);
