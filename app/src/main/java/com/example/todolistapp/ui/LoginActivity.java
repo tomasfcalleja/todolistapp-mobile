@@ -62,7 +62,7 @@ public class LoginActivity extends AppCompatActivity {
         // Sacar el splash del sistema al instante (es del mismo color, no se nota)
         splash.setOnExitAnimationListener(vista -> vista.remove());
 
-        seed();   // <-- provisorio, borrar antes de entregar
+        seed();   // Datos de demostración para facilitar la evaluación del TP
 
         sesion = new SessionManager(this);
         if (sesion.haySesion()) {

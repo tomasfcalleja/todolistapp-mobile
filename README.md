@@ -63,6 +63,19 @@ comparten hash. Se guarda como `salt:hash` en hexadecimal.
 
 Requiere Android Studio y un dispositivo o emulador con Android 7.0 (API 24) o superior.
 
+## Usuario de prueba
+
+La app precarga un usuario de demostración en el primer arranque, con categorías
+y tareas de ejemplo ya cargadas:
+
+| | |
+|---|---|
+| Email | `test@test.com` |
+| Contraseña | `1234` |
+
+También es posible crear una cuenta nueva desde la pantalla de registro. Los datos
+son locales al dispositivo: no hay servidor ni cuentas compartidas.
+
 ```bash
 git clone https://github.com/tomasfcalleja/todolistapp-mobile.git
 ```
