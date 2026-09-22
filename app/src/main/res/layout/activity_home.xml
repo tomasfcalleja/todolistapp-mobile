@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingTop="24dp">
+        android:paddingTop="@dimen/padding_top_pantalla">
 
         <TextView
             android:id="@+id/tvSaludo"

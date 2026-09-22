@@ -12,7 +12,7 @@
         android:minHeight="800dp"
         android:paddingStart="@dimen/margen_lateral"
         android:paddingEnd="@dimen/margen_lateral"
-        android:paddingTop="24dp"
+        android:paddingTop="@dimen/padding_top_pantalla"
         android:paddingBottom="24dp">
 
         <TextView
